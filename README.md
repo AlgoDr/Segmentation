@@ -1,27 +1,28 @@
+----
+## :beginner:Real Time :o: Instance Segmentation :fleur_de_lis: Using Mask R-CNN :ballot_box_with_check:
 
-## Real Time Instance Segmentation Using Mask R-CNN
----
 ![segmentation](https://assets.website-files.com/5c9bab50cb7584b312b31c7f/5f843f1a33feee2e360c538d_ezgif.com-gif-maker.gif) 
 
-### 1.1 Enviourment Setup :heavy_check_mark:(*Optional But Recommended*):
+### :point_right: 1.1 Enviourment Setup :heavy_check_mark:(*Optional But Recommended*):
 > Setting A Virtual Enviorment For Dedicated Project Is Good Option As This Way We Dont Disturb The Pre-existing Enviorment Of Python Dependencies On System 
 > As A Result Of This While Making Dependencies Of Project It Doesn't Clash With Existing Enviorment And We Avoid Most Of Pip wheel Build Errros
 
-`For Those Who Know How To Setup VirtualEnviorment (Skip This Step) Make A Virtualenv And Install Dependecies From requirements.txt(filename:enviourment.txt) And Jump To 1.2 Installation(Below 1.1 Enviorment Setup)`
+`For Those Who Know How To Setup VirtualEnviorment (Skip This Step)`:sunglasses:
+` Make A Virtualenv And Install Dependecies From requirements.txt(filename:enviourment.txt) And Jump To 1.2 Installation(Below 1.1 Enviorment Setup)`
 
-`1. Installing Virtualenv Module:`
+`1. Installing Virtualenv Module:`:heavy_check_mark:
 > `NOTE: For Windows Users Always Open CMD AS Run As Adminstartor`
 
 > For Creating A Virtualenv First Install Virtualenv Module From Python Using Hit
  `pip3 install virtualenv` In CMD/Terminal'
 
-`2. Creating Virtualenv`
+`2. Creating Virtualenv`:heavy_check_mark:
 > For Creating A Virtualenv Hit `virtualenv <any-name-of-your-env>` In CMD/Terminal Type **virtualenv** Followed By Any Name
   For Example : `virtualenv myenv` Now You see In Your Current Working Directory A new folder **myenv** Is Created This Folder Contains Your Enviorment Details
   Like Which Python Version & Which Libs installed (Currently empty becauses we manually installed what dependency we want for our project) & etc.
   
-`3.Activating Virtualenv`
-> `For linux Users:`
+`3.Activating Virtualenv`:heavy_check_mark:
+> :heavy_check_mark:`For linux Users:`:computer:
 > 
 >  Type `source <name-of-env>/bin/activate` Now You Observe That your terminal Prompt $ has (<your-env>) ahead of your current working directory this means you're inside your virtualenv 
 >
@@ -31,7 +32,7 @@
 >
 > Now the only thing left for you is installing dependency **For That** Go TO **1.2 Installation**
 
-> `For Windows Users:`
+> :heavy_check_mark:`For Windows Users:`:desktop_computer: 
 >  
 >  In Windows For first tym usage of virtualenv it shows some *warnings* when you activate your virtualenv so don't worry about warnings(we will solve them) and just follow these steps
 >
@@ -51,9 +52,9 @@
   
  
 
-### 1.2 Installation
+### :point_right: 1.2 Installation
 
-`STEP 1: INSTALLING DEPENDENCIES`
+`STEP 1: INSTALLING DEPENDENCIES` :heavy_check_mark:
 
 > 1) Clone The Repo Or Download Source Code
 >
@@ -61,7 +62,7 @@
 >
 >    For End Users Download The Code From Above Down Arrow :arrow_down: sign  Extract/Untar The Zip And Open Terminal/CMD Followed By Project Path
 
-> 2) Make A Seprate Virtual Enviorment *(Optional But Recommended)* :heavy_check_mark: 
+> 2) Make A Seprate Virtual Enviorment *(Optional But Recommended)* 
 >
 >    Explain From Scratch In **1.1 Setting Enviourment** If You Already Did Just Activate And Go To Next Step
 
@@ -78,7 +79,7 @@
 >      After All Dependency Installed Next Is About ML Model
 >
 
-`STEP:2 SEGMENTATION MODEL`
+`STEP:2 SEGMENTATION MODEL`:heavy_check_mark:
   
  > For This We Gonna Be Use **MASK-RCNN** Which Is Slightly Less Accurate Then **Faster R-CNN** But In Comparision with low latency in ms(Required For *Real Time*) And Acceptable Accuracy Of Computer-Vision Task Near About Human Level Error Its A Good Choice *Note:*`It Is Soft Real Time Latency`i.e.(In ms latency But Not exactly accurate as Hard Real Time )
  >
@@ -93,13 +94,13 @@
  >
  > `KEYPOINT: This pretrained Mask-RCNN Is Trained On Coco Dataset Which Is One Of The Most Popular Data Set For Object Detection Task Like Classsification,Localization,Segmentation etc. This Dataset Contained Millions Of Images Of Thousand Category like Bus,Cars,Human etc. As Comapred To Most Of Stuff We See In Daily Life Plus This Dataset Overall Size Into 28 GB.`
  
-`STEP :3 RUNNING INSTANCE`
+`STEP :3 RUNNING INSTANCE` :heavy_check_mark:
   
  > Till This Step Your Installation Is Complete Now The Only Thing You Need Is Running `index.py`file by Typing 'python3 index.py' In CMD/Terminal
  > It Will Take Barely 10s And a Window Will Pop Up It Is Running instance Of What Type Of Argument You paased **0 For Your Web Came Video** Orpath to Video in single Quote **'path-to-video.mp4'** in `index.py file In `VideoCapure Function``
   
   
-### 1.3 Usage:
+### :point_right: 1.3 Usage: :+1:
 > `Index.py`is main file which contain driver code of running segmentation model 
 > 
 >  You have to just Run index.py as `python3 index.py`
@@ -107,5 +108,5 @@
 > NOTE:that All Data(Pretrained_coco_model.hs,virtualenv_folder & index.py all should be in same directory/folder)
 > For Running On Video Download Any OutDoor/InDoor Video From Youtube Or any other platform And Put Downloded video in Same Folder And In`index.py` In`VideoCapture()`Function Put Path To Video In Single Quotes**'path-to-video.mp4'** in place of **0** ;0 Is For Webcame Video Processing And It Should Be placed Without Quotes **VideoCapture(0)**
   
-
+---
 
